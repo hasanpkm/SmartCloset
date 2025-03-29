@@ -27,7 +27,7 @@
 
         .header {
             text-align: left;
-            font-size: 80px;
+            font-size: 60px;
             font-weight: normal;
             font-family: 'Didot', serif;
             margin: 20px;
@@ -48,55 +48,81 @@
         .navbar {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
 
         .navbar a {
-            font-size: 35px;
+            font-size: 25px;
             color: #0000ff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 10px;
             opacity: 0.5;
             transition: opacity 0.3s;
         }
 
-        .navbar a:hover {
-            opacity: 1;
-        }
-
-        .navbar a.active {
+        .navbar a:hover, .navbar a.active {
             opacity: 1;
         }
 
         .content {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            max-width: 1200px;
+            max-width: 90%;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .image {
-            width: 30%;
-            max-width: 300px;
+            width: 80%;
+            max-width: 250px;
         }
 
         .info {
-            text-align: left;
-            margin-left: 40px;
+            text-align: center;
+            margin-top: 20px;
         }
 
         .info h2 {
-            font-size: 35px;
+            font-size: 28px;
             margin: 0;
         }
 
         .info p {
-            font-size: 20px;
+            font-size: 18px;
             margin: 5px 0;
         }
+
+        @media (min-width: 768px) {
+            .header {
+                font-size: 80px;
+            }
+            .navbar a {
+                font-size: 35px;
+                margin: 0 15px;
+            }
+            .content {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .image {
+                width: 30%;
+                max-width: 300px;
+            }
+            .info {
+                text-align: left;
+                margin-left: 40px;
+            }
+            .info h2 {
+                font-size: 35px;
+            }
+            .info p {
+                font-size: 20px;
+            }
+        }
     </style>
+    <link href="Mobileshoe.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1 class="header"><a href="SmartCloset.html">SmartCloset</a></h1>
