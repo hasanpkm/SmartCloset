@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCloset</title>
+    <style>
+        @font-face {
+            font-family: 'The Seasons';
+            src: url('path/to/TheSeasons.woff2') format('woff2'),
+                 url('path/to/TheSeasons.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Didot&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'The Seasons', serif;
+            text-align: center;
+            background-color: #ffffff;
+            color: #0000ff;
+        }
+
+        .header {
+            text-align: left;
+            font-size: 80px;
+            font-weight: normal;
+            font-family: 'Didot', serif;
+            margin: 20px;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #0000ff;
+            margin-top: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .navbar a {
+            font-size: 35px;
+            color: #0000ff;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+
+        .navbar a:hover {
+            opacity: 1;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .marquee {
+            display: inline-block;
+            font-size: 45px;
+            color: #0000ff;
+            font-family: 'The Seasons', serif;
+            text-transform: uppercase;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .text {
+            font-size: 13pt;
+            color: #0000ff;
+            max-width: 90%;
+            text-align: left;
+            font-family: 'Futura', sans-serif;
+        }
+
+        .subheader {
+            font-family: 'The Seasons', serif;
+            font-size: 30px;
+            color: #0000ff;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .image {
+            max-width: 45%;
+        }
+
+        .footer {
+            text-align: right;
+            font-size: 16px;
+            color: #0000ff;
+            margin-top: 20px;
+            padding-right: 20px;
+        }
+
+        .footer-line {
+            width: 100%;
+            height: 2px;
+            background-color: #0000ff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="header">SmartCloset</h1>
+<div class="line"></div>
+    <div class="navbar">
+        <a href="top.html">top</a>
+        <a href="bottom.html">bottom</a>
+        <a href="#">shoe</a>
+        <a href="#">jewelry</a>
+        <a href="#">accessoire</a>
+    </div>
+<img src="Bilder/Banner 3.png" alt="SmartCloset Banner" class="banner">
+    
+<div class="line"></div>
+    <div class="marquee-container">
+        <span class="marquee">BALLROOM DÜSSELDORF &nbsp; BALLROOM DÜSSELDORF &nbsp; BALLROOM DÜSSELDORF</span>
+    </div>
+<div class="line"></div>
+    
+    <div class="content">
+        <div>
+            <div class="subheader">Die digitale Garderobe für die Ballroom Community</div>
+            <p class="text">
+              <span>SmartCloset ist eine Website, auf der wir unsere Kleidung als Fotos sammeln, um sie miteinander zu teilen. Jedes Mitglied der Community hat Zugriff darauf, kann sich die verfügbaren Outfits anschauen und diese für kommende Balls ausleihen. Unser Ziel ist es, eine nachhaltige Lösung für unsere Szene zu schaffen. Anstatt für jeden Ball neue Outfits zu kaufen, ermöglichen wir uns gegenseitig, bereits vorhandene Kleidung weiterzugeben und zu nutzen. So bleibt die Kreativität lebendig, ohne dass wir ständig in neue Pieces investieren müssen. SmartCloset ist mehr als nur eine digitale Kleiderkammer – es ist ein gemeinschaftliches Projekt, das unseren Spirit von Austausch und Unterstützung stärkt.</span>
+            </p>
+        </div>
+        <img src="Bilder/Banner 4.png" alt="SmartCloset Community" class="image">
+    </div>
+
+    <div class="footer" style="text-align: right;">die Website wurde erstellt und wird verwaltet von Cupid / Hasan</div>
+    
+    <div class="line"></div>
+
+</body>
+</html>
+
+
