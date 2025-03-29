@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartCloset</title>
+    <title>SmartCloset - Top</title>
     <style>
         @font-face {
             font-family: 'The Seasons';
@@ -60,7 +60,11 @@
             transition: opacity 0.3s;
         }
 
-        .navbar a:hover, .navbar a:first-child {
+        .navbar a:hover {
+            opacity: 1;
+        }
+
+        .navbar a.active {
             opacity: 1;
         }
 
@@ -98,16 +102,16 @@
     <h1 class="header"><a href="SmartCloset.html">SmartCloset</a></h1>
     <div class="line"></div>
     <div class="navbar">
-        <a href="#" style="opacity: 1;">top</a>
-        <a href="#">bottom</a>
-        <a href="#">shoe</a>
-        <a href="#">jewelry</a>
-        <a href="#">accessoire</a>
+        <a href="top.html" class="active">top</a>
+        <a href="bottom.html">bottom</a>
+        <a href="shoe.html">shoe</a>
+        <a href="jewelry.html">jewelry</a>
+        <a href="accessoire.html">accessoire</a>
     </div>
     <div class="line"></div>
 
     <div class="content">
-        <img src="Bilder/Kleidung/Puffoberteil.png" alt="Puffoberteil" class="image">
+        <img src="Bilder/Kleidung/Puffoberteil.png" alt="Top" class="image">
         <div class="info">
             <h2>Puffoberteil</h2>
             <p><strong>von:</strong> Hasan</p>
